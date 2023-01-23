@@ -5,9 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="gamestart">
+        <div class="heading">   
+            <h1>
+                <span style="color: #ffe84a;">Rock</span>
+                <span style="color: #01ded0;">Paper</span>
+                <span style="color: #f3b9f4;">Scissors!</span>
+            </h1>
+        </div>
+        
+        <div class="main">
+            <div class="score">
+                <div class="player">
+                    <img src="images/mark.png">
+                    <h3>You : <span class="player_points">0</span></h3>
+                </div>
+                <div class="computer">
+                    <img src="images/mark.png">
+                    <h3>Computer : <span class="computer_points">0</span></h3>
+                </div>
+            </div>
+        
+            <div class="info">
+                <b><p>Choose Your Weapon <br> First To Score 5 Point WINs!</p></b>
+            </div>
+            
+            <div class="select">
+                <img data-key="rock" class="rock" src="images/rock.png" alt="rock">
+                <img data-key="paper" class="paper" src="images/paper.png" alt="paper">
+                <img data-key="scissor" class="scissor" src="images/scissor.png" alt="Scissors">
+            </div>
+        </div>
+    
+        <div class="footer">
+            <p><b>Copyright © <script>document.write(new Date().getFullYear())</script> Abdeali   </b>
+                <a href="https://github.com/Abdeali7"><img src="images/github.png" alt="githubIcon"></a>
+            </p>
+        </div>
+    </div>
+    
+    <div id="gameover">
+        <div class="container">
+            <b><p class="gameupdate"></p></b>
+            <a href="index.html">Play Again?</a>
+        </div>
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
