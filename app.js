@@ -80,6 +80,7 @@ const outcomes = {
     computer_points.innerText = computerCount;
     if(result === 'win'){
         gameupdate.innerHTML = 'You Win :) <br> You Stopped Computer To Take Control!';
+        startConfetti();
     } else if(result === 'lose'){
         gameupdate.innerHTML = 'You Loose :( <br> Computer Has Taken Control!';
     }
